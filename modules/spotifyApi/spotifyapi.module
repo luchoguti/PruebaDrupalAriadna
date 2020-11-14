@@ -9,9 +9,9 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function api_spotify_theme()
 {
   return [
-    'page_new_releases' => [
-      'variables' => ['releases' => NULL],
-      'template' => 'page_new_releases'
+    'new_releases_spotify_page' => [
+      'variables' => ['new_releases' => NULL],
+      'template' => 'new_releases_spotify_page'
     ]
   ];
 }

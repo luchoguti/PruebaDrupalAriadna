@@ -4,3 +4,10 @@ api_spotify.new_releases:
   route_name: api_spotify.new_releases
   menu_name: New Release Today
   weight: 1
+
+api_spotify.artist:
+    title: Artistas
+    description: 'Detalle del artista'
+    route_name: api_spotify.artist
+    menu_name: artist
+    weight: 1

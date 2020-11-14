@@ -6,7 +6,7 @@ namespace Drupal\spotifyApi\Controller;
 
 use GuzzleHttp\Exception\GuzzleException;
 
-class AuthorizationAdiSpotify
+class AuthorizationApiSpotify
 {
   private $dataApi;
   private $authorizationApi;
