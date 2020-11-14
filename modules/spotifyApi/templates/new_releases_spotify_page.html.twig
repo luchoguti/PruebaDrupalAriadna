@@ -1,0 +1,17 @@
+<div class="row">
+  {% for spotify_data in new_releases.albums.items %}
+    <div class="col-md-4">
+      <img src="{{ spotify_data.images[1].url }}" alt="">
+      <h3>{{ spotify_data.name }}</h3>
+
+      {% for artist_data in spotify_data.artists %}
+        <a class="button" href="{{ path('api_spotify.artist', {'id' : artist_data.id}) }}">
+          {{ artist_data.name }}
+        </a>
+
+      {% endfor %}
+    </div>
+    <br>
+    <br>
+  {% endfor %}
+</div>
