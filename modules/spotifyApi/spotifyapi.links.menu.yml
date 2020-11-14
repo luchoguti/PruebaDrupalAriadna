@@ -1,0 +1,6 @@
+api_spotify.new_releases:
+  title: Lanzamientos
+  description: 'Ultimos lanzamientos 2020'
+  route_name: api_spotify.new_releases
+  menu_name: New Release Today
+  weight: 1

@@ -1,0 +1,7 @@
+api_spotify.new_releases:
+  path: '/api_spotify/ultimos_lanzamientos'
+  defaults:
+    _controller: '\Drupal\spotifyapi\Controller\SpotifyApiController::newReleases'
+    _title: 'Ultimos Lanzamientos'
+  requirements:
+    _permission: 'access content'

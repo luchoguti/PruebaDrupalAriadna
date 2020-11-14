@@ -1,0 +1,13 @@
+name: Spotify Consume API
+type: module
+description: Modulo that permmit consume api and expose services in views
+package: Web services
+dependencies:
+  - drupal:rest
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+# Information added by Drupal.org packaging script on 2020-10-13
+version: '8.x-1.18'
+project: 'spotifyApi'
+datestamp: 1593229947

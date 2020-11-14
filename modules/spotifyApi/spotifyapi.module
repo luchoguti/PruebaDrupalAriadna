@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * themes
+ * @return array[]
+ */
+function api_spotify_theme()
+{
+  return [
+    'page_new_releases' => [
+      'variables' => ['releases' => NULL],
+      'template' => 'page_new_releases'
+    ]
+  ];
+}
+
