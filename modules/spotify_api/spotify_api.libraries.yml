@@ -1,0 +1,5 @@
+spotify_api_css:
+  version: 1.x
+  css:
+    theme:
+      css/layout_api.css:{ }

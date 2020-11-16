@@ -1,0 +1,8 @@
+.col-md-4{
+  display: flex;
+  width: 25%;
+  border: dashed 1px cornflowerblue;
+}
+.row{
+  display: flex;
+}

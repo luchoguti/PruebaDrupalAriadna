@@ -41,3 +41,14 @@ function spotify_api_theme()
   ];
 }
 
+/**
+ * Implements hook_page_attachments().
+ * @param array $attachments
+ */
+function spotify_api_page_attachments(array &$attachments)
+{
+  if ($attachments['plugin_id'] == 'spotify_api') {
+      $attachments['#attached']['library'][] = 'spotify_api/spotify_api_css';
+  }
+}
+
