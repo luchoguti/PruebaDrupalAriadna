@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * Contains spotify_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * @param $route_name
+ * @param RouteMatchInterface $route_match
+ * @return string
+ */
+function spotify_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.spotify_api':
+      $output_about = '';
+      $output_about .= '<h4>' . t('About') . '</h4>';
+      $output_about .= '<p>' . t('Http Client of Spotify. Test ariadna') . '</p>';
+      return $output_about;
+
+    default:
+  }
+}
+
+/**
+ * themes
+ * @return array[]
+ */
+function spotify_api_theme()
+{
+  return [
+    'new_releases_spotify_page' => [
+      'variables' => ['new_releases' => NULL],
+      'template' => 'new_releases_spotify_page'
+    ],
+    'artist_spotify_page' => [
+      'variables' => ['artist' => NULL, 'tracks' => NULL],
+      'template' => 'artist_spotify_page'
+    ]
+  ];
+}
+

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BladeDebugConfiguration">
+    <cachePath>$PROJECT_DIR$</cachePath>
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
@@ -84,5 +87,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
     </include_path>
+  </component>
+  <component name="TwigDebugConfiguration">
+    <cachePath>$PROJECT_DIR$</cachePath>
   </component>
 </project>

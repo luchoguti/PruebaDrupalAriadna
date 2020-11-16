@@ -1,0 +1,15 @@
+spotify_api.new_releases:
+  path: '/api_spotify/ultimos_lanzamientos'
+  defaults:
+    _controller: '\Drupal\spotify_api\Controller\SpotifyApiController::newReleases'
+    _title: 'Ultimos Lanzamientos'
+  requirements:
+    _permission: 'access content'
+
+spotify_api.artist:
+  path: '/api_spotify/artist/{id}'
+  defaults:
+    _controller: '\Drupal\spotify_api\Controller\SpotifyApiController::artist'
+    _title: 'Artistas'
+  requirements:
+    _permission: 'access content'

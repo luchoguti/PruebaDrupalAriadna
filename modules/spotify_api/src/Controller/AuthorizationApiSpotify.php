@@ -1,7 +1,10 @@
 <?php
+/**
+ * @file
+ * Contains \Drupal\spotify_api\Controller\AuthorizationApiSpotify.
+ */
 
-
-namespace Drupal\spotifyApi\Controller;
+namespace Drupal\spotify_api\Controller;
 
 
 use GuzzleHttp\Exception\GuzzleException;
@@ -24,10 +27,10 @@ class AuthorizationApiSpotify
       'form_params' => [
         'grant_type' => 'client_credentials',
         'client_id' => '5c60d8d7b2334df18324627228944c82',
-        'client_secret' => 'b1e161c0fac0443cafd7ac6c090dc29b'
+        'client_secret' => 'fef0860c04654fd5ab5927427f66ad39'
       ]
     ]);
-    $this->authorizationApi = json_encode ($dataAuthorization->getBody ());
+    $this->authorizationApi = json_decode($dataAuthorization->getBody ()->getContents ());
   }
 
   /**

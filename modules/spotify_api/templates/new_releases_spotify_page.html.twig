@@ -5,7 +5,7 @@
       <h3>{{ spotify_data.name }}</h3>
 
       {% for artist_data in spotify_data.artists %}
-        <a class="button" href="{{ path('api_spotify.artist', {'id' : artist_data.id}) }}">
+        <a class="button" href="{{ path('spotify_api.artist', {'id' : artist_data.id}) }}">
           {{ artist_data.name }}
         </a>
 
